@@ -12,6 +12,5 @@ for(const key in employee){
     const value=employee[key];
     console.log(key,value);
 }
-
 // we will be using for of for arrays and string and for...in
 // for object traversal methods.
