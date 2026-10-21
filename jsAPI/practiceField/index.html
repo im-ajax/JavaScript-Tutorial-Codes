@@ -13,11 +13,20 @@
             border-radius: 10px;
             cursor: pointer;
         }
+        .post-card{
+            border: 1px solid black;
+            border-radius: 30px;
+            padding: 20px;
+            margin-top: 10px;
+        }
     </style>
 </head>
 <body>
-    <button class="btn" onclick="loadData()">Get Data</button>
     <h3>all data</h3>
+    <button class="btn" onclick="loadPost()">Get Data</button>
+    <section id="postHolder">
+
+    </section>
     <script src="apiPractice.js"></script>
 </body>
 </html>

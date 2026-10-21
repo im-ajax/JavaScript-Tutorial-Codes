@@ -1,7 +1,7 @@
 const loadPost=()=>{
-    const url="https://jsonplaceholder.typicode.com/posts";
+    const url="https://jsonplaceholder.typicode.com/users";
     fetch(url)
-    .then(res=>res.json())
+    .then((res)=>res.json())
     .then((data)=>{
         // console.log(data);
         displayPosts(data);
@@ -16,11 +16,14 @@ const displayPosts=(posts)=>{
         const postCard=document.createElement("div");
         postCard.innerHTML=`
             <div class="post-card">
-                <h2>${post.title}</h2>
-                <p>${post.body}</p>
+                <h2>${post.name}</h2>
+                <p>${post.username}</p>
+                <p>${post.adress.street}</p>
             </div>
         `;
         // 3. add to the container
         postContainer.append(postCard);
     });
 };
+
+
